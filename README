@@ -4,15 +4,6 @@
 *********************************************************/
 
 
-
- What was completed:
-
-      our code successfully completes the tests that have been given to us
-      including cat.um, hello.um, midmark.um in less than 10 seconds,
-      sandmark.umz successfully completed in under 2 minutes.
-
-      
-
  Architecture:
 
       um.c : organizes/checks valid input and calls main driver functions
