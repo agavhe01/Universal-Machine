@@ -1,0 +1,6 @@
+arith.um
+cmov.um
+io.um
+print-six.um
+halt-verbose.um
+halt.um

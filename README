@@ -1,0 +1,71 @@
+
+/**********************************************************
+* Anesu Gavhera
+*********************************************************/
+
+
+
+ What was completed:
+
+      our code successfully completes the tests that have been given to us
+      including cat.um, hello.um, midmark.um in less than 10 seconds,
+      sandmark.umz successfully completed in under 2 minutes.
+
+      
+
+ Architecture:
+
+      um.c : organizes/checks valid input and calls main driver functions
+
+
+      seg.c/h : implementation and interface for Seg_T data structure,
+      will use Hanson Sequence data structure to organize each individual
+      segment and overall group of segments. Seg_Ts will consist of a struct
+      with 2 sequences, one to keep track of and hold mapped segments, and
+      another to keep track of the addresses of unmapped segments.
+
+      instr.c/h : implementation and interface for calling instructions(main
+      driver functions) from $m[0] and the instructions that can be called
+      that are not related to segments. Contains implementation for UM struct
+      with all data used to run the instructions.
+
+
+ time to complete 50 million instructions:
+
+      the way that we calculated the amount of time that it would take to
+      run 50 million instructions is that we, created a counter
+      variable in our um struct and added 1 to the variable every time a
+      new instruction was called.
+
+      # of instr in midmark = 85070522
+      time to complete each instruction = 7.15 seconds
+      time per instruction = 8.4e-8
+      time for 50m instructions = 4.202s
+
+UM tests:
+
+
+    arith.um: Tests arithmetic operations(add, multiply, and divide) outputs
+                expected values based on registers that are loaded with values
+                at the beginning of the program.
+
+    cmov.um:  Tests the CMOV command, loading a register rc with 0, and then
+                running a CMOV, outputting the correct value, then changing
+                rc to 1, and outputting the value of a new CMOV.
+
+
+    io.um: Takes in "Hello, World." as input one character at a time, then
+            outputs the words.
+
+    print-six.um: Prints 6.
+
+    halt-verbose.um: Tests Halt at a higher level.
+
+    halt.um: Basic Test of Halt
+
+
+ Time taken to complete assignment:
+
+     analyzing assignment : 4 hours
+     preparing the design : 5 hours
+     solving problem after analysis : 22 hours
